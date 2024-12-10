@@ -6,11 +6,11 @@ module.exports = {
   extends: [
     'next',
     'eslint:recommended',
-    'plugin:prettier/recommended', // Ensure this is present
+    'plugin:prettier/recommended',
     'next/core-web-vitals',
     'next/typescript',
-    'prettier', // Ensure this is added at the end of the array
+    'prettier',
   ],
-  plugins: ['prettier'], // Add this line to include the Prettier plugin
+  plugins: ['prettier'],
   rules: {},
 }

@@ -39,6 +39,7 @@ export default async function VehicleModels({
         ))}
       </ul>
     )
+    // eslint-disable-next-line
   } catch (error) {
     return <p className="text-red-500">❌ Error fetching models</p>
   }

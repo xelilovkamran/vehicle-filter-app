@@ -36,7 +36,7 @@ export async function generateStaticParams() {
   )
   const makeData = await makeRes.json()
   const makeDataResults: MakeType[] = makeData.Results
-  const makes = makeDataResults.map((item: any) => item.MakeName.toLowerCase())
+  const makes = makeDataResults.map((item) => item.MakeName.toLowerCase())
 
   const currentYear = new Date().getFullYear()
   const years = Array.from({ length: currentYear - 2015 + 1 }, (_, i) =>

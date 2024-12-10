@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function ResultPage({
   params,
 }: {
-  params: { makeId: string; year: string }
+  params: Promise<{ makeId: string; year: string }>
 }) {
   return (
     <main className="p-4">

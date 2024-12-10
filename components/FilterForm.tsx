@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState, Suspense } from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 
 const MakeSelect = ({
@@ -13,7 +13,7 @@ const MakeSelect = ({
   setSelectedMake: React.Dispatch<React.SetStateAction<string>>
 }) => {
   if (!makes.length) {
-    return <p>Loading vehicle makes...</p>
+    return <p className="mb-2 font-semibold">Loading vehicle makes...</p>
   }
 
   return (
@@ -87,21 +87,17 @@ const FilterForm = () => {
     <div className="p-4">
       <h1 className="text-xl font-bold mb-4 text-center">Filter Vehicles</h1>
 
-      <Suspense fallback={<p>Loading makes...</p>}>
-        <MakeSelect
-          makes={makes}
-          selectedMake={selectedMake}
-          setSelectedMake={setSelectedMake}
-        />
-      </Suspense>
+      <MakeSelect
+        makes={makes}
+        selectedMake={selectedMake}
+        setSelectedMake={setSelectedMake}
+      />
 
-      <Suspense fallback={<p>Loading years...</p>}>
-        <YearSelect
-          selectedYear={selectedYear}
-          setSelectedYear={setSelectedYear}
-          currentYear={currentYear}
-        />
-      </Suspense>
+      <YearSelect
+        selectedYear={selectedYear}
+        setSelectedYear={setSelectedYear}
+        currentYear={currentYear}
+      />
 
       <Link
         href={

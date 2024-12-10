@@ -14,7 +14,7 @@ const fetchVehicleModels = async (
 export default async function VehicleModels({
   params,
 }: {
-  params: { makeId: string; year: string }
+  params: Promise<{ makeId: string; year: string }>
 }) {
   const { makeId, year } = await params
 

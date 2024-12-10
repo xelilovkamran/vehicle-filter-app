@@ -23,6 +23,7 @@ This is a Next.js application that allows users to filter vehicles by make and m
 - **Routing**: Dynamic routing using Next.js
 - **Deployment**: Vercel (Next.js hosting)
 - **Environment Variables**: `.env.local` and `.env.production` for configuration
+- **Linting**: ESLint and Prettier
 
 ## Requirements
 

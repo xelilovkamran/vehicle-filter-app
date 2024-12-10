@@ -123,7 +123,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the application in y
 │ ├── favicon.ico # App favicon
 │ ├── globals.css # Global styles (TailwindCSS)
 │ └── result/ # Result pages
-│       └── [makeId]/[year] # Dynamic route to show results based on selected make and year
+│ └── [makeId]/[year] # Dynamic route to show results based on selected make and year
 ├── public/ # Static assets (images, etc.)
 │ └── home.png # Home page image
 ├── types/ # TypeScript types
@@ -137,3 +137,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the application in y
 ├── postcss.config.js # PostCSS configuration
 ├── tsconfig.json # TypeScript configuration
 └── README.md # Project documentation (this file)
+
+## Deployment
+
+The application is deployed using Vercel, which provides a seamless deployment experience for Next.js applications. You can check out the live demo of the application from [here](https://vehicle-filter-app.vercel.app/).

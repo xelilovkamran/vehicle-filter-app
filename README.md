@@ -114,7 +114,8 @@ Open [http://localhost:3000](http://localhost:3000) to view the application in y
 
 ## Directory Structure
 
-.
+```bash
+vehicle-filter-app/
 ├── components/ # Reusable UI components
 │ ├── FilterForm.tsx # Component for the vehicle filter form
 │ └── VehicleModels.tsx # Component for displaying vehicle models
@@ -138,6 +139,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the application in y
 ├── postcss.config.js # PostCSS configuration
 ├── tsconfig.json # TypeScript configuration
 └── README.md # Project documentation (this file)
+```
 
 ## Deployment
 
